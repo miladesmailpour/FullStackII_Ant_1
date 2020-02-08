@@ -1,0 +1,3 @@
+GET = http://localhost:3000/chatRoom
+
+GET = http://localhost:3000/chatRoom/12

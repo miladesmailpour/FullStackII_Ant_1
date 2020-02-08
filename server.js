@@ -19,7 +19,9 @@ db.once('open', () => console.log(test.output('Connected to Database!')))
 
 // Setup the app and Router
 app.use(express.json())
-//const subscriberasRouter = require()
+const chatRoomRouter = require('./routes/chatRoom')
+app.use('/chatRoom', chatRoomRouter)
+
 
 // Listening to port 3000 to check server ran
 app.listen(3000, () => console.log(test.output('Server Started on Port 3000!')))
